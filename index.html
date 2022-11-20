@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" id="link-de-css">
+    <link rel="stylesheet" media="(max-width: 1000px)" href="assets/css/responsivity.css" />
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/effects.css">
+    <title>Lojita Store</title>
+</head>
+<body onscroll="roll()">
+    <header id="topo">        
+        <!-- top nav -->
+        <input type="checkbox" name="" id="inp-tgg">
+            <nav class="nav-bar" id="nav-bar">
+                <div class="nav-left" id="side-left-c">
+                    <h1>Loojita Store</h1>  
+                </div>
+                <div id="side-right-c">
+                    <div class="toggle-area">
+                        <label for="inp-tgg" class="control">
+                            <span class="icon-toggle"></span>
+                        </label>
+                    </div>  
+                    <div class="nav-right" id="nav-showToggle">      
+                        <div class="small-top">
+                            <div class="small-top-left">
+                                <a href="acess.html" class="btn-top"><i class="fa-solid fa-circle-user"></i></a>
+                                <button class="btn-top" id="btn-top-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                                <div class="cart" id="cart">
+                                    <div class="content-cart">
+                                        <div class="side-right">
+                                            <img src="assets/img/ring-l.jpg" alt="ring-line">
+                                        </div>
+                                        <div class="side-left">
+                                            <span>nome do produto</span>
+                                            <small>tipo do produto</small>
+                                            <span class="price">$25<small>,00</small></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="total-cart">
+                                        <strong>Total: <span class="price">$25<small>,00</small></span></strong>
+                                        <strong class="last">$50<small>,00</small></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="small-top-right">    
+                                <button class="btn-top" id="theme"><i class="fa-solid fa-toggle-off"></i></button>
+                                <button disabled="disabled"><i class="fa-sharp fa-solid fa-moon"></i></i></button> 
+                            </div>
+                        </div> 
+                        <ul class="links-top" id="links">
+                            <li class="link-top-item" ><a href="index.html">Home</a></li>
+                            <li class="link-top-item" ><a href="index.html#offer-day">Ofertas</a></li>
+                            <li class="link-top-item" ><a href="index.html#show-articles-md">Categoria</a></li>
+                            <li class="link-top-item" ><a href="sobre.html">Sobre</a></li>
+                            <li class="link-top-item" ><a href="contato.html">Contato</a></li></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+        </header>
+              <!-- slides and informations -->
+        <section class="slide-motion-area" id="slide-motion-area">    
+            <div class="slide-all-content">
+                <input type="radio" name="radio" id="radio1" class="btn-to-next"  checked>
+                <input type="radio" name="radio" id="radio2" class="btn-to-next">
+                <input type="radio" name="radio" id="radio3" class="btn-to-next">
+
+                    <div class="slide s-1">
+                        <div class="text-slide-are">
+                            <h4 class="slide-title">Está na Melhor LOJA ONLINE</h4>
+                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
+                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
+                            <a href="" class="slide-btn">Ver Produtos</a>    
+                        </div> 
+                        <div class="slide-image">
+                            <img src="assets/img/shop-1.svg" alt="slide-image" class="image-slide">
+                        </div>
+                    </div>
+                
+                    <div class="slide s-2"> 
+                        <div class="text-slide-are">
+                            <h4 class="slide-title">Sinta-se confortável e a Vontade</h4>   
+                            <p>Os produtos mais <strong>desejados</strong>  no mercado, com garantia de <b>3 meses</b>.</p>
+                            <p>Faça pagamentos instantanéos e receba tudo em sua casa.</p><br>
+                            <a href="" class="slide-btn">Compras Agora</a>
+                        </div>
+                        <div class="slide-image">
+                            <img src="assets/img/shop-2.svg" alt="slide-image" class="image-slide">
+                        </div>
+                    </div>
+    
+                    <div class="slide s-3"> 
+                        <div class="text-slide-are">
+                            <h4 class="slide-title">A emoção de comprar um sonho</h4>   
+                            <p>Nossa gama de <strong>Produtos</strong> irá imprecionar <b>você</b>.</p>
+                            <p>otimos preços e sem custos extensivos adicionais.</p><br>
+                            <a href="" class="slide-btn">Ver mais</a>
+                       </div>
+
+                       <div class="slide-image">                
+                            <img src="assets/img/shop-3.svg" alt="slide-image" class="image-slide">
+                       </div>
+                    </div>
+                </div> 
+            <div class="navigation">
+                <label for="radio1"></label>
+                <label for="radio2"></label>
+                <label for="radio3"></label>
+            </div>
+        </section>
+        
+        <main id="container-fluxo">
+
+            <section class="mini-catg">
+                <div class="items-catg">
+                    <a href="" class="c-color">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Eletrónicos</span>
+                    </a>
+    
+                    <a href="" class="other-color">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Videos Jogos</span>
+                    </a>
+
+                    <a href="" class="c-color">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Entregas</span>
+                    </a>
+
+                    <a href="" class="other-color">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Livros</span>
+                    </a>
+                    
+                    <a href="" class="c-color">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <span>Filmes e Séries</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- search area -->
+        <section class="search-area">
+                <form action="">
+                    <fieldset>
+                        <label for="">
+                            <input type="search" name="search-in" id="search-input" placeholder="pesquise produtos aqui..." autosave>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </label>
+                        <legend>Pesquisar Produtos</legend>
+                    </fieldset>
+                </form>
+        </section>
+
+
+            <!-- most-wanted-info -->
+        <section class="show-articles-md" id="show-articles-md">
+            <h2 class="top-text">Mais Comprados</h2>
+            <div class="section-c">
+                <a href="" class="c-1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> 
+                </a>
+                
+                <a href="" class="c-2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>                    
+                </a>
+
+                <a href="" class="c-3">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> 
+                </a>
+                
+                <a href="" class="c-4">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> 
+                </a>
+            </div>
+            <div class="btn-area">
+                <a href="" class="btn-see-more">ver tudo</a>
+            </div>
+        </section>
+
+            <!-- products area -->
+        <section class="products">
+            <h2 class="top-text">Aleátorios</h2>
+            <div class="sc-area">
+                <div class="compressed">
+                    <div class="compressed-x">
+                        <img src="assets/img/nikw-jordan.webp" alt="ténis da nike" class="compress-image">
+                        <div  class="info-compressed">
+                            <small class="grey-tom">  Esportivo  </small>
+                            <span class="name-product">Nike Jordan</span>
+                            <span class="price">$25<small>,00</small></span>
+                            <button class="btn-add-to-cart">Add ao carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="compressed-x">
+                        <img src="assets/img/ring-l.jpg" alt="ring light para telefone" class="compress-image">
+                        <div  class="info-compressed">
+                            <small class="grey-tom">  Dia Dia  </small>
+                            <span class="name-product">Ring light</span>
+                            <span class="price">$25<small>,00</small></span>
+                            <button class="btn-add-to-cart">Add ao carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="compressed-x">
+                        <img src="assets/img/tshirt.webp" alt="camisola branca" class="compress-image">
+                        <div  class="info-compressed">
+                            <small class="grey-tom">  Vestuario  </small>
+                            <span class="name-product">Tshirt-Branca</span>
+                            <span class="price">$25<small>,00</small></span>
+                            <button class="btn-add-to-cart">Add ao carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="compressed-x">
+                        <img src="assets/img/tv.jpeg" alt="tv ligada" class="compress-image">
+                        <div  class="info-compressed">
+                            <small class="grey-tom">  Eletrónicos  </small>
+                            <span class="name-product">Tv</span>
+                            <span class="price">$25<small>,00</small></span>
+                            <button class="btn-add-to-cart">Add ao carrinho</button>
+                        </div>
+                    </div>
+    
+                    <div class="compressed-x">
+                        <img src="assets/img/iphone.webp" alt="smartphone da apple" class="compress-image">
+                        <div class="info-compressed">
+                            <small class="grey-tom">  Celular  </small>
+                            <span class="name-product">iphone</span>
+                            <span class="price">$25<small>,00</small></span>
+                            <button class="btn-add-to-cart">Add ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <button class="previous"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+
+            <div class="btn-area">
+                <a href="" class="btn-see-more">ver tudo</a>
+            </div>   
+                
+        </section>
+
+        <!-- all-pay-info -->
+
+    <section class="all-pay-info">
+            <h3> <i class="fa-solid fa-money-bill"></i> Formas de Pagamento</h3>
+            <p>Para que se sinta confortável, optamos por opurtunar os pagamentos instantanéos e seguros, primamos pela  segurança, por isso ao fazer qualquer pagamento, siga corretamente os passos que indicarmos, durante o processo de pagamentos para que se possa confirmar o pagamento.
+            </p>
+            <div class="organize">
+                <div class="pay-info-card">
+                    <div class="text-card">
+                        <img src="assets/img/paypal.png" alt="paypal logo" class="pay-logo">
+                        <a href="" class="btn-type-see-more">Paypal</a>
+                        <div class="content-text">
+                            <p><i class="fa-solid fa-money-bill-1"></i><b>Tipo de Pagamento</b></p>
+                            <p><i class="fa-solid fa-shield-halved"></i><b> instantanéos e Seguro</b></p>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="pay-info-card">
+                    <div class="text-card">
+                        <img src="assets/img/visa.png" alt="visa logo" class="pay-logo">
+                        <a href="" class="btn-type-see-more">Cartão de Crédito Internacional</a>
+                        <div class="content-text">
+                            <p><i class="fa-solid fa-money-bill-1"></i><b>Tipo de Pagamento</b></p>
+                            <p><i class="fa-solid fa-shield-halved"></i><b> instantanéos e Seguro</b></p>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="pay-info-card">
+                    <div class="text-card">
+                        <img src="assets/img/wester-union.png" alt="wester union logo" class="pay-logo">
+                        <a href="" class="btn-type-see-more">Wester Union</a>
+                        <div class="content-text">
+                            <p><i class="fa-solid fa-money-bill-1"></i><b>Tipo de Pagamento</b></p>
+                            <p><i class="fa-solid fa-shield-halved"></i><b> instantanéos e Seguro</b></p>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="offer-day" id="offer-day">
+        <div class="title-offer">
+            <h3>OFERTAS DO DIA</h3>
+        </div>
+
+       <div class="offer-flex">
+            <div class="offer-day-card">
+                <h3>Livros de Informática</h3>
+                <div class="img-content">
+                    <img src="assets/img/book.png" alt="livro de Informática" class="img-offer-card">
+                </div>
+                <a href="produtcs-expand.html">mais sobre o produto</a>
+            </div>
+
+            <div class="offer-day-card">
+                <h3>Video Jogo - FIFA 22</h3>
+                <div class="img-content">
+                    <img src="assets/img/gmae.webp" alt="videojogos fifa" class="img-offer-card">
+                </div>
+                    <a href="produtcs-expand.html">mais sobre o produto</a>
+            </div>
+            
+            <div class="offer-day-card">
+                <h3>Assinatura para netflix</h3>
+                <div class="img-content">
+                    <img src="assets/img/netflix.png" alt="netflix assinatura de 1 mês" class="img-offer-card">
+                </div>
+                    <a href="produtcs-expand.html">mais sobre o produto</a>
+            </div>
+
+            <div class="offer-day-card">
+                <h3>Livros de Informática</h3>
+                <div class="img-content">    
+                    <img src="assets/img/office.webp" alt="netflix assinatura de 1 mês" class="img-offer-card">
+                </div>
+                    <a href="produtcs-expand.html">mais sobre o produto</a>
+            </div>
+       </div>
+
+    </section>
+
+
+        <!-- address-area -->
+        <section class="map-area" id="map">
+            <h4 class="map-text-top">Adiconar localização</h4>
+            <p>Receba seus produtos a partir de sua localização atual.</p>
+            <div class="map-add">
+                <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+
+        </main>
+    <!-- footer-area -->
+    <footer>
+       <div class="groups-footer">
+        <div class="group-md">
+            <h5>LOJITA STORE</h5>
+            <p>Caro cliente, Está na maior loja instantanéa de Angola, somos a sua Loojita ondes podes comprar e receber 24/24h.
+            </p>
+            <a href="" class="btn-see-more">ver mais</a>
+            <ul class="socials-link">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+       </div>
+       <div class="group-md">
+        <h4 class="h-title">Ir para</h4>
+            <ul class="group-list-links">
+                <li class="link-bottom"><a href="#show-articles-md" >Mais Comprados</a></li>
+                <li class="link-bottom"><a href="" >Ofertas</a></li>
+                <li class="link-bottom"><a href="" >Carrinho</a></li>
+                <li class="link-bottom"><a href="" >Delivery</a></li>
+            </ul>    
+       </div>
+
+       
+       <address class="group-md">
+         <h4 class="h-t">Contatos</h4>
+           <ul class="address-info">
+                <li> <i><i class="fa-solid fa-phone"></i> </i><small> (+244)</small> 930 076 068</li>
+                <li> <i><i class="fa-solid fa-phone"></i> </i><small> (+244)</small> 930 000 000 </li>
+                <li> <i class="fa-solid fa-location-dot"></i> Luanda, municipio, localidade, casa nº</li> 
+                <li class="more-gray"> <i class="fa-solid fa-calendar"></i> Seg. à Sabado - 24/24h</li>
+           </ul>
+       </address>
+    
+       </div>
+        <div class="latest-content">
+            <p>copyrigth 2022 by. <b>KeyCoding develop.</b> - <i>Lojita Store</i></p>
+        </div>
+    </footer>
+</body>
+
+<!-- Os scripts rodando na page -->
+    <script src="assets/javascript/scrpt-to-index.js"></script>
+    <script src="assets/javascript/to-responsive.js"></script>
+</html>

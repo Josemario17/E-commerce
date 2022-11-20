@@ -1,0 +1,3 @@
+-remover evento
+fazer efeito com checkbox para o toggle
+colocar eventos do botão toggle em um media queries
