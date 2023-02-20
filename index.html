@@ -1,118 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" id="link-de-css">
-    <link rel="stylesheet" media="(max-width: 1000px)" href="assets/css/responsivity.css" />
-    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.2.0-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/effects.css">
-    <title>Lojita Store</title>
+     
+    <!-- links e ligações css importantes -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>MIT - Ecomerce</title>
 </head>
 <body onscroll="roll()">
-    <header id="topo">        
+    <header id="topo">   
+            <div class="small-top">
+                <div class="small-top-section">
+                    <p>«espaço para promoções»</p>
+                </div>
+
+                <div class="small-top-section">
+                    <a href="acess.html" class="small-top-element">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>                          
+                    </a>
+                    <button class="small-top-element">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                          </svg>                                                    
+                    </button>
+                    
+                    <div class="theme-md">
+                        <button class="small-top-element">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                              </svg>                          
+                        </button>
+                        <button class="small-top-element">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                              </svg>                              
+                        </button>     
+                    </div>    
+                </div>
+            </div>       
+
         <!-- top nav -->
-        <input type="checkbox" name="" id="inp-tgg">
-            <nav class="nav-bar" id="nav-bar">
-                <div class="nav-left" id="side-left-c">
-                    <h1>Loojita Store</h1>  
+            <nav class="nav-bar">
+                <div class="nav-bar_group">
+                    <img src="assets/img/" alt="logo "> 
                 </div>
-                <div id="side-right-c">
-                    <div class="toggle-area">
-                        <label for="inp-tgg" class="control">
-                            <span class="icon-toggle"></span>
-                        </label>
-                    </div>  
-                    <div class="nav-right" id="nav-showToggle">      
-                        <div class="small-top">
-                            <div class="small-top-left">
-                                <a href="acess.html" class="btn-top"><i class="fa-solid fa-circle-user"></i></a>
-                                <button class="btn-top" id="btn-top-cart"><i class="fa-solid fa-cart-shopping"></i></button>
-                                <div class="cart" id="cart">
-                                    <div class="content-cart">
-                                        <div class="side-right">
-                                            <img src="assets/img/ring-l.jpg" alt="ring-line">
-                                        </div>
-                                        <div class="side-left">
-                                            <span>nome do produto</span>
-                                            <small>tipo do produto</small>
-                                            <span class="price">$25<small>,00</small></span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="total-cart">
-                                        <strong>Total: <span class="price">$25<small>,00</small></span></strong>
-                                        <strong class="last">$50<small>,00</small></strong>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="small-top-right">    
-                                <button class="btn-top" id="theme"><i class="fa-solid fa-toggle-off"></i></button>
-                                <button disabled="disabled"><i class="fa-sharp fa-solid fa-moon"></i></i></button> 
-                            </div>
-                        </div> 
-                        <ul class="links-top" id="links">
-                            <li class="link-top-item" ><a href="index.html">Home</a></li>
-                            <li class="link-top-item" ><a href="index.html#offer-day">Ofertas</a></li>
-                            <li class="link-top-item" ><a href="index.html#show-articles-md">Categoria</a></li>
-                            <li class="link-top-item" ><a href="sobre.html">Sobre</a></li>
-                            <li class="link-top-item" ><a href="contato.html">Contato</a></li></li>
-                        </ul>
-                    </div>
+
+                <input type="checkbox" name="t-check" id="inp-tgg">
+                <label for="inp-tgg" class="control">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                      </svg>                      
+                </label>
+
+                <div class="nav-bar_group">
+                    <ul class="links-top">
+                        <li class="link-top-item" ><a href="index.html">Home</a></li>
+                        <li class="link-top-item" ><a href="index.html#offer-day">Ofertas</a></li>
+                        <li class="link-top-item" ><a href="index.html#show-articles-md">Categoria</a></li>
+                        <li class="link-top-item" ><a href="sobre.html">Sobre</a></li>
+                        <li class="link-top-item" ><a href="contato.html">Contato</a></li></li>
+                    </ul>
                 </div>
-            </nav>
-    
-        </header>
+            </div>
+        </nav>
+    </header>
               <!-- slides and informations -->
-        <section class="slide-motion-area" id="slide-motion-area">    
-            <div class="slide-all-content">
+        <section class="slide">    
+            <div class="slide-content">
                 <input type="radio" name="radio" id="radio1" class="btn-to-next"  checked>
                 <input type="radio" name="radio" id="radio2" class="btn-to-next">
                 <input type="radio" name="radio" id="radio3" class="btn-to-next">
 
-                    <div class="slide s-1">
-                        <div class="text-slide-are">
-                            <h4 class="slide-title">Está na Melhor LOJA ONLINE</h4>
+                    <!-- slide-content 1 -->
+                    <div class="slide-content_s">
+                        <div class="slide-content_text">
+                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
                             <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
-                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
-                            <a href="" class="slide-btn">Ver Produtos</a>    
+                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido.</p><br>
+                            <a href="" class="btn-see-more">Ver Produtos</a>    
                         </div> 
                         <div class="slide-image">
-                            <img src="assets/img/shop-1.svg" alt="slide-image" class="image-slide">
+                            <img src="assets/img/watche.png" alt="slide-image" class="slide-image_img">
                         </div>
                     </div>
-                
-                    <div class="slide s-2"> 
-                        <div class="text-slide-are">
-                            <h4 class="slide-title">Sinta-se confortável e a Vontade</h4>   
-                            <p>Os produtos mais <strong>desejados</strong>  no mercado, com garantia de <b>3 meses</b>.</p>
-                            <p>Faça pagamentos instantanéos e receba tudo em sua casa.</p><br>
-                            <a href="" class="slide-btn">Compras Agora</a>
-                        </div>
+                    
+                    <!-- slide-content 2 -->
+                    <div class="slide-content_s">
+                        <div class="slide-content_text">
+                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
+                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
+                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
+                            <a href="" class="btn-see-more">Ver Produtos</a>    
+                        </div> 
                         <div class="slide-image">
-                            <img src="assets/img/shop-2.svg" alt="slide-image" class="image-slide">
+                            <img src="assets/img/shop-1.svg" alt="slide-image" class="slide-image_img">
                         </div>
                     </div>
-    
-                    <div class="slide s-3"> 
-                        <div class="text-slide-are">
-                            <h4 class="slide-title">A emoção de comprar um sonho</h4>   
-                            <p>Nossa gama de <strong>Produtos</strong> irá imprecionar <b>você</b>.</p>
-                            <p>otimos preços e sem custos extensivos adicionais.</p><br>
-                            <a href="" class="slide-btn">Ver mais</a>
-                       </div>
 
-                       <div class="slide-image">                
-                            <img src="assets/img/shop-3.svg" alt="slide-image" class="image-slide">
-                       </div>
+                    <!-- slide-content 3 -->
+                    <div class="slide-content_s">
+                        <div class="slide-content_text">
+                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
+                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
+                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
+                            <a href="" class="btn-see-more">Ver Produtos</a>    
+                        </div> 
+                        <div class="slide-image">
+                            <img src="assets/img/shop-1.svg" alt="slide-image" class="slide-image_img">
+                        </div>
                     </div>
+
                 </div> 
             <div class="navigation">
-                <label for="radio1"></label>
-                <label for="radio2"></label>
-                <label for="radio3"></label>
+                <label for="radio1">0</label>
+                <label for="radio2">1</label>
+                <label for="radio3">3</label>
             </div>
         </section>
         
@@ -394,6 +400,5 @@
 </body>
 
 <!-- Os scripts rodando na page -->
-    <script src="assets/javascript/scrpt-to-index.js"></script>
-    <script src="assets/javascript/to-responsive.js"></script>
+    <script src="assets/js/basics.js"></script>
 </html>
