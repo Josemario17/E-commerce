@@ -7,7 +7,7 @@
      
     <!-- links e ligações css importantes -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>MIT - Ecomerce</title>
+    <title>BestSeller - Está na Melhor LOJA ONLINE</title>
 </head>
 <body>
     <div class="bloco_cimo">
@@ -15,14 +15,14 @@
     </div>
     <header class="header">   
         <div class="h_seccao">
-            <img src="a" alt="Logo Principal">
+            <p class="logo-texto">BestSeller</p>
         </div>
         <div class="h_seccao">
-            <button class="h_seccao_btn">
+            <label class="h_seccao_btn" for="t-check">
                 <img src="assets/img/icons/bars.svg" alt="bars" class="svg">
-            </button>
+            </label>
         </div>
-
+        <input type="checkbox" name="t-check" id="t-check">
         <div class="h_seccao">
             <input type="search" name="serach" id="area_de_procura" placeholder="Pesquise aqui" required>
             <button type="submit"><img src="assets/img/icons/search.svg" alt="search" class="svg"></button>
@@ -62,22 +62,23 @@
         <a href="sobre.html" class="nav-bar_link">Sobre nós</a>
         <a href="contato.html" class="nav-bar_link">Contate-nos</a>
     </nav>
-<!-- slides and informations -->
+<!-- centro cimo -->
         <div class="centro-cimo">    
             <section class="centro-cimo_elemento">
-                <div>    
+                <div class="centro-cimo_elemento_texto">    
                     <h1>Está na Melhor LOJA ONLINE</h1>
                     <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
                     <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido.</p><br>
                     <a href="" class="btn-ver-mais">Ver Produtos</a>
                 </div>
-                <img src="assets/img/Sales-consulting-pana.svg" alt="ilustration" class="ilustration">  
+                <img src="assets/img/shopping.svg" alt="ilustration" class="ilustration">  
             </section>   
             <section class="centro-cimo_elemento">
                 <section class="centro-cimo_sub-elemento">
-                    <div>
+                    <div class="lado-texto">
                         <h2>Oferta do Dia:</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur.</p>
+                        <p class="price">3.000 AKZ <span><small class="last-price">5.000 AKZ</small></span></p>
                         <a href="" class="a-ver-mais">ver mais</a>
                     </div>
                     <div class="lado-imagem">
@@ -100,51 +101,74 @@
                 </section>   
             </section>
         </div>
-        
-        <main id="container-fluxo">
 
+        <div class="info-adicionais">
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/shield-check.svg" alt="icon secure" class="info-adicionais">
+                <div class="elemento_texto">
+                    <p><b>100% de segurança no Pagamento</b></p>
+                    <span>Garantia de segurança nos pagamentos</span>
+                </div>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/life-ring.svg" alt="icon support" class="info-adicionais">
+                <div class="elemento_texto">
+                    <p><b>24/7 de disponibilidade em Suporte</b></p>
+                    <span>Temos disponibilidade 24h por dia</span>
+                </div>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/pricetag-alt.svg" alt="icon offer" class="info-adicionais">
+                <div class="elemento_texto">
+                    <p><b>Ofertas Diárias</b></p>
+                    <span>Ofertas diariamente de produtos e serviços</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- conteudo em fluxos -->
+        <main class="container-fluxo">
             <section class="mini-catg">
+                <h2>Navegue pelas Categorias</h2>
                 <div class="items-catg">
-                    <a href="" class="c-color">
-                        <i class="fa-solid fa-computer"></i>
+                    <a href="" class="items-catg_elemento">
+                        <div>
+                            <img src="assets/img/tv.jpeg" alt="tv">
+                        </div>
                         <span>Eletrónicos</span>
                     </a>
     
-                    <a href="" class="other-color">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span>Videos Jogos</span>
+                    <a href="" class="items-catg_elemento">
+                        <div>
+                            <img src="assets/img/roupas.webp" alt="Roupas">
+                        </div>
+                        <span>Vestuario</span>
                     </a>
 
-                    <a href="" class="c-color">
-                        <i class="fa-solid fa-truck-fast"></i>
-                        <span>Entregas</span>
+                    <a href="" class="items-catg_elemento">
+                        <div>
+                            <img src="assets/img/iphone.webp" alt="iphone">
+                        </div>
+                        <span>Telefones</span>
                     </a>
 
-                    <a href="" class="other-color">
-                        <i class="fa-solid fa-book"></i>
-                        <span>Livros</span>
+                    <a href="" class="items-catg_elemento">
+                        <div>
+                            <img src="assets/img/watche.webp" alt="Acessórios">
+                        </div>
+                        <span>Acessórios</span>
                     </a>
                     
-                    <a href="" class="c-color">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <span>Filmes e Séries</span>
+                    <a href="" class="items-catg_elemento">
+                        <div>
+                            <img src="assets/img/computers.jpg" alt="computer">
+                        </div>
+                        <span>Informáticos</span>
                     </a>
                 </div>
             </section>
-
-            <!-- search area -->
-        <section class="search-area">
-                <form action="">
-                    <fieldset>
-                        <label for="">
-                            <input type="search" name="search-in" id="search-input" placeholder="pesquise produtos aqui..." autosave>
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </label>
-                        <legend>Pesquisar Produtos</legend>
-                    </fieldset>
-                </form>
-        </section>
-
 
             <!-- most-wanted-info -->
         <section class="show-articles-md" id="show-articles-md">
