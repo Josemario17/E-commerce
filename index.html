@@ -9,118 +9,97 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>MIT - Ecomerce</title>
 </head>
-<body onscroll="roll()">
-    <header id="topo">   
-            <div class="small-top">
-                <div class="small-top-section">
-                    <p>«espaço para promoções»</p>
-                </div>
+<body>
+    <div class="bloco_cimo">
+        <span class="bloco_cimo_elemento">«Promoções aqui»</span>
+    </div>
+    <header class="header">   
+        <div class="h_seccao">
+            <img src="a" alt="Logo Principal">
+        </div>
+        <div class="h_seccao">
+            <button class="h_seccao_btn">
+                <img src="assets/img/icons/bars.svg" alt="bars" class="svg">
+            </button>
+        </div>
 
-                <div class="small-top-section">
-                    <a href="acess.html" class="small-top-element">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                          </svg>                          
-                    </a>
-                    <button class="small-top-element">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                          </svg>                                                    
-                    </button>
-                    
-                    <div class="theme-md">
-                        <button class="small-top-element">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                              </svg>                          
-                        </button>
-                        <button class="small-top-element">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                              </svg>                              
-                        </button>     
-                    </div>    
-                </div>
-            </div>       
+        <div class="h_seccao">
+            <input type="search" name="serach" id="area_de_procura" placeholder="Pesquise aqui" required>
+            <button type="submit"><img src="assets/img/icons/search.svg" alt="search" class="svg"></button>
+        </div>
 
-        <!-- top nav -->
-            <nav class="nav-bar">
-                <div class="nav-bar_group">
-                    <img src="assets/img/" alt="logo "> 
-                </div>
-
-                <input type="checkbox" name="t-check" id="inp-tgg">
-                <label for="inp-tgg" class="control">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-                      </svg>                      
-                </label>
-
-                <div class="nav-bar_group">
-                    <ul class="links-top">
-                        <li class="link-top-item" ><a href="index.html">Home</a></li>
-                        <li class="link-top-item" ><a href="index.html#offer-day">Ofertas</a></li>
-                        <li class="link-top-item" ><a href="index.html#show-articles-md">Categoria</a></li>
-                        <li class="link-top-item" ><a href="sobre.html">Sobre</a></li>
-                        <li class="link-top-item" ><a href="contato.html">Contato</a></li></li>
-                    </ul>
+        <div class="h_seccao">
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/map-marker-info.svg" alt="info" class="svg">
+                <div>
+                    <span>@email</span>
+                    <span><strong>number</strong></span>
                 </div>
             </div>
-        </nav>
+
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/chat-bubble-user.svg" alt="user" class="svg">
+                <a href="acess.html">
+                    <span>Conta</span>
+                    <span><strong>Entrar</strong></span>
+                </a>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/shopping-cart.svg" alt="cart" class="svg">
+                <button>
+                    <span>Carrinho</span>
+                    <span><strong>0, <small>00</small>AKZ</strong></span>
+                </button>
+            </div>              
+        </div>
+    </div>
+
     </header>
-              <!-- slides and informations -->
-        <section class="slide">    
-            <div class="slide-content">
-                <input type="radio" name="radio" id="radio1" class="btn-to-next"  checked>
-                <input type="radio" name="radio" id="radio2" class="btn-to-next">
-                <input type="radio" name="radio" id="radio3" class="btn-to-next">
 
-                    <!-- slide-content 1 -->
-                    <div class="slide-content_s">
-                        <div class="slide-content_text">
-                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
-                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
-                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido.</p><br>
-                            <a href="" class="btn-see-more">Ver Produtos</a>    
-                        </div> 
-                        <div class="slide-image">
-                            <img src="assets/img/watche.png" alt="slide-image" class="slide-image_img">
-                        </div>
+    <nav class="nav-bar">
+        <a href="#" class="nav-bar_link" id="active-link">Home</a>
+        <a href="sobre.html" class="nav-bar_link">Sobre nós</a>
+        <a href="contato.html" class="nav-bar_link">Contate-nos</a>
+    </nav>
+<!-- slides and informations -->
+        <div class="centro-cimo">    
+            <section class="centro-cimo_elemento">
+                <div>    
+                    <h1>Está na Melhor LOJA ONLINE</h1>
+                    <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
+                    <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido.</p><br>
+                    <a href="" class="btn-ver-mais">Ver Produtos</a>
+                </div>
+                <img src="assets/img/Sales-consulting-pana.svg" alt="ilustration" class="ilustration">  
+            </section>   
+            <section class="centro-cimo_elemento">
+                <section class="centro-cimo_sub-elemento">
+                    <div>
+                        <h2>Oferta do Dia:</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum.</p>
+                        <a href="" class="a-ver-mais">ver mais</a>
                     </div>
-                    
-                    <!-- slide-content 2 -->
-                    <div class="slide-content_s">
-                        <div class="slide-content_text">
-                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
-                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
-                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
-                            <a href="" class="btn-see-more">Ver Produtos</a>    
-                        </div> 
-                        <div class="slide-image">
-                            <img src="assets/img/shop-1.svg" alt="slide-image" class="slide-image_img">
-                        </div>
+                    <div class="lado-imagem">
+                        <img src="assets/img/tshirt.webp" alt="tshirt" class="lado-imagem-elemento">
+                    </div>  
+                </section>  
+                
+                  <section class="centro-cimo_sub-elemento">
+                    <div>
+                        <h2>Temos Para sí</h2>
+                        <p>Produtos de Marcas como:</p>
                     </div>
-
-                    <!-- slide-content 3 -->
-                    <div class="slide-content_s">
-                        <div class="slide-content_text">
-                            <h4 class="slide-content_title">Está na Melhor LOJA ONLINE</h4>
-                            <p>Compre com <strong>requinte</strong> e no <b>conforto</b> de sua casa.</p>
-                            <p>Temos para sí, desde Eletrónicos à produtos de consumo rápido</p><br>
-                            <a href="" class="btn-see-more">Ver Produtos</a>    
-                        </div> 
-                        <div class="slide-image">
-                            <img src="assets/img/shop-1.svg" alt="slide-image" class="slide-image_img">
-                        </div>
-                    </div>
-
-                </div> 
-            <div class="navigation">
-                <label for="radio1">0</label>
-                <label for="radio2">1</label>
-                <label for="radio3">3</label>
-            </div>
-        </section>
+                    <div class="lado-imagem-grupo-pai">
+                        <img src="assets/img/apple.webp" alt="apple" class="lado-imagem-grupo">
+                        <img src="assets/img/Adidas-logo.webp" alt="Adidas-logo" class="lado-imagem-grupo">
+                        <img src="assets/img/nike.jpg" alt="aa" class="lado-imagem-grupo">
+                        <img src="assets/img/samsung.webp" alt="aa" class="lado-imagem-grupo">
+                        <span class="lado-imagem-final-grupo">+4</span>       
+                    </div>  
+                </section>   
+            </section>
+        </div>
         
         <main id="container-fluxo">
 
@@ -397,6 +376,7 @@
             <p>copyrigth 2022 by. <b>KeyCoding develop.</b> - <i>Lojita Store</i></p>
         </div>
     </footer>
+    <div></div>
 </body>
 
 <!-- Os scripts rodando na page -->
