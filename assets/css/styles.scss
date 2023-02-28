@@ -6,6 +6,25 @@ $background: rgba(252, 248, 239, 0.484);
 $shadow: 0px 3px 6px, rgba(150, 150, 150, 0.027) 0px 3px 6px;
 $shadow-especial: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.027) 0px 3px 6px;
 
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb700; 
+  }
 
 //font para o texto todo
 @font-face {
@@ -29,9 +48,9 @@ body{
     width: auto;
     max-width: 100vw;
     height: 100%;
-    overflow-x: hidden;
     background-color: $background;
     color: $color2;
+    scroll-behavior: smooth;
 }
 
 button{
@@ -104,7 +123,6 @@ header{
         margin: 0 auto;
         justify-content: space-around;
         flex-wrap: wrap;
-
         .h_seccao{
             width: 40%;
             display: grid;
@@ -132,6 +150,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 30px;
+
 }
 
 .h_seccao:nth-of-type(2){
@@ -313,12 +332,12 @@ header{
     margin-left: 3px;
     padding: 3% 0;
     h1{
-        width: 90%;
+        width: 100%;
         padding: 0 2%;
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
     p{
-        width: 80%;
+        width: 100%;
         padding: 0 2%;
         font-size: 1.5em;
     }
@@ -442,7 +461,11 @@ header{
     display: flex;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 
+    @media (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
     
 }
 
@@ -458,6 +481,7 @@ header{
     height: 100%;
     gap: 15px;
     padding: 3% 0;
+    flex-wrap: nowrap;
     @media (max-width: 1200px) {
         flex-direction: column;
         align-items: center;
@@ -499,4 +523,237 @@ header{
     img[src$=".png"]{
         width: 100%;
     }
+}
+
+//estilos da Publicidades 
+.publicidade{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    margin: 3% 0;
+    margin-bottom: 5%;
+
+    @media (max-width:1200px) {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.publicidade__card{
+    width: 60%;
+    height: 380px;
+    min-height: 100%;
+    background-color: rgba(245, 222, 179, 0.089);
+    border-radius: 6px;
+    border: 1.5px solid rgba(128, 128, 128, 0.186);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width:1200px) {
+        width: 100%;
+    }
+}
+
+.publicidade__card .publicidade__card__elemento{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    img{
+        width: 90%;
+    }
+
+    p{
+        width: 80%;
+        line-height: 1.4em;
+    }
+}
+
+.publicidade__card .publicidade__card__elemento p:nth-child(2){
+    font-size: 2em;
+    font-weight: 700;
+    margin: 2% 0;
+    line-height: 1em;
+}
+
+.publicidade__card .publicidade__card__elemento span{
+    display: block;
+    width: 80%;
+    font-weight: 100px;
+    font-size: .8em;
+}
+
+.publicidade .is-grd{
+    width: 38%;
+    background-image: url('../img/fones.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:1200px) {
+        width: 100%;
+    }
+}
+
+.is-grd span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    background-color: red;
+    color: $color;
+    border-radius: 50%;
+}
+
+//area dos produtos
+.slide-produtos{
+    width: 100vw;
+    height: 100%;
+}
+
+.scroll-slide{
+    width: 1444px;
+    overflow-x: scroll;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3% 1%;
+    
+    @media (max-width:1200px) {
+        width: 100vw;
+    }
+}
+
+.card{
+    width: 22em;
+    height: 25em;
+    min-width: 18em;
+    padding: 2%;
+    border-radius: 12px;
+    background-color: $background;
+    border: 1.5px solid rgba(128, 128, 128, 0.186);
+    display: grid;
+    gap: 10px;
+    margin-left: 2%;
+}
+
+.card:first-of-type{
+    margin-left: 480px;
+
+    @media (max-width:1200px) {
+        margin-right: 60%;
+    }
+}
+
+.card:last-of-type{
+    margin-right: 2%;
+    @media (max-width:1200px) {
+        margin-right: 10%;
+    }
+}
+
+
+
+.card__percent{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 0%;
+
+    .desconto{
+        display: block;
+        width: 3em;
+        height: 1.5em;
+        background-color: red;
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.card__text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__text :is(h3, div){
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card__price{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+
+    .price{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .price + span{
+        font-size: smaller;
+    }
+}
+
+.card__img{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 50%;
+    }
+}
+
+
+.card__btn{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card__btn button{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card__btn button:nth-child(1){
+    width: 30%;
+    height: 35px;
+    background-color: $color;
+    border-radius: 8px;
+    
+    img{
+        width: 28%;
+    }
+}
+
+.card__btn button:nth-child(2){
+    width: 50%;
+    height: 35px;
+    background-color: $color;
+    border-radius: 8px;
+    font-size: 1em;
+    color: $color2;
+    gap: 5px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.card .card__btn button:hover{
+    background-color: #ffb700;
 }
