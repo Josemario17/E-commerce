@@ -1,6 +1,5 @@
 
-
-//script para Alterar tema
+//script para o search move
 let a = document.querySelector(".theme-md .small-top-element")
 a.onclick = function(){
         a.style.marginTop = "-31px"

@@ -620,6 +620,7 @@ header{
     overflow-x: scroll;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 3% 1%;
     
@@ -639,21 +640,6 @@ header{
     display: grid;
     gap: 10px;
     margin-left: 2%;
-}
-
-.card:first-of-type{
-    margin-left: 480px;
-
-    @media (max-width:1200px) {
-        margin-right: 60%;
-    }
-}
-
-.card:last-of-type{
-    margin-right: 2%;
-    @media (max-width:1200px) {
-        margin-right: 10%;
-    }
 }
 
 
@@ -756,6 +742,124 @@ header{
 
 .card .card__btn button:hover{
     background-color: #ffb700;
+}
+
+//parte das ofertas
+
+.Oferta{
+    width: 90%;
+    margin: 5% auto;
+    h2{
+        text-align: center;
+        margin: 3% auto;
+    }
+}
+
+.oferta-area{
+    width: 100%;
+    height: 600px;
+    display: flex;
+
+    @media (max-width: 1200px) {
+        height: 100%;
+    }
+}
+
+.oferta-destaque{
+    @extend .card;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    *{
+        width: 90%;
+    }
+}
+
+
+.oferta-link{ 
+    display: flex;
+    justify-content: center;
+
+}
+
+.oferta-area{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1200px) {
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}
+
+.oferta-area-side{
+    @extend .card;
+    width: 70%;
+    height: 100%;
+}
+
+.dados-producto{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p, li{
+        margin: 1% 0;
+    }
+    
+    @media (max-width: 1200px) {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.sec-produto{
+    margin-top: 3%;
+}
+
+.cores-lista{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 12px;
+
+
+}
+
+
+.cores-lista div{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 14px;
+}
+
+body .cor-rose{
+    background-color: rosybrown;
+}
+
+body .cor-blue{
+    background-color: blue;
+}
+
+body .cor-red{
+    background-color: red;
+}
+
+body .cor-black{
+    background-color: black;
+}
+
+body .cor-gold{
+    background-color: gold;
 }
 
 

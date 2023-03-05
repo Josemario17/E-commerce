@@ -589,6 +589,7 @@ header {
   overflow-x: scroll;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 3% 1%;
 }
@@ -598,7 +599,7 @@ header {
   }
 }
 
-.card {
+.card, .oferta-area-side, .oferta-destaque {
   width: 22em;
   height: 25em;
   min-width: 18em;
@@ -609,24 +610,6 @@ header {
   display: grid;
   gap: 10px;
   margin-left: 2%;
-}
-
-.card:first-of-type {
-  margin-left: 480px;
-}
-@media (max-width: 1200px) {
-  .card:first-of-type {
-    margin-right: 60%;
-  }
-}
-
-.card:last-of-type {
-  margin-right: 2%;
-}
-@media (max-width: 1200px) {
-  .card:last-of-type {
-    margin-right: 10%;
-  }
 }
 
 .card__percent {
@@ -719,8 +702,118 @@ header {
   height: 20px;
 }
 
-.card .card__btn button:hover {
+.card .card__btn button:hover, .oferta-area-side .card__btn button:hover, .oferta-destaque .card__btn button:hover {
   background-color: #ffb700;
+}
+
+.Oferta {
+  width: 90%;
+  margin: 5% auto;
+}
+.Oferta h2 {
+  text-align: center;
+  margin: 3% auto;
+}
+
+.oferta-area {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .oferta-area {
+    height: 100%;
+  }
+}
+
+.oferta-destaque {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.oferta-destaque * {
+  width: 90%;
+}
+
+.oferta-link {
+  display: flex;
+  justify-content: center;
+}
+
+.oferta-area {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1200px) {
+  .oferta-area {
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.oferta-area-side {
+  width: 70%;
+  height: 100%;
+}
+
+.dados-producto {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dados-producto p, .dados-producto li {
+  margin: 1% 0;
+}
+@media (max-width: 1200px) {
+  .dados-producto {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.sec-produto {
+  margin-top: 3%;
+}
+
+.cores-lista {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.cores-lista div {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 14px;
+}
+
+body .cor-rose {
+  background-color: rosybrown;
+}
+
+body .cor-blue {
+  background-color: blue;
+}
+
+body .cor-red {
+  background-color: red;
+}
+
+body .cor-black {
+  background-color: black;
+}
+
+body .cor-gold {
+  background-color: gold;
 }
 
 footer, .footer__elemento {
