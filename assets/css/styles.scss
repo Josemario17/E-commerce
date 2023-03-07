@@ -45,6 +45,7 @@ $shadow-especial: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.
 }
 
 body{
+    position: relative;
     width: auto;
     max-width: 100vw;
     height: 100%;
@@ -620,7 +621,7 @@ header{
     overflow-x: scroll;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    overflow: scroll;
     justify-content: center;
     padding: 3% 1%;
     
@@ -988,6 +989,75 @@ footer .footer__elemento .is-btn{
     }
     @media (max-width: 900px) {
         flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+//area do carrinho
+.cart{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    padding: 4% 3%;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+    border-left: 3px solid #5057630b;
+    @media (max-width: 900px) {
+        width: 60%;    
+    }
+}
+
+.cart__element{
+    width: 100%;
+}
+
+.cart__element:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.cart__element--side{
+    width: 100%;
+    padding-bottom: 4%;
+    border-bottom: 1.8px solid $color2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+
+    span{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: $color;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+}
+
+.cart__element--itemsList{
+    width: 100%;
+    padding-top: 6%;
+    p{
+        padding: 2% 0;
         text-align: center;
     }
 }

@@ -49,7 +49,7 @@
 
             <div class="h_seccao_md">
                 <img src="assets/img/icons/shopping-cart.svg" alt="cart" class="svg">
-                <button>
+                <button  id="cartCall">
                     <span>Carrinho</span>
                     <span><strong>0, <small>00</small>AKZ</strong></span>
                 </button>
@@ -416,12 +416,6 @@
             </div>
        </div>
     </section>
-
-    <!-- area extra -->
-    <section>
-        <h2>Outros serviços</h2>
-    </section>
-        
 </main>
     <!-- footer-area -->
     <footer>
@@ -447,7 +441,21 @@
             </div>
         </div>  
     </footer>
-    <div></div>
+    <div class="cart">
+        <div class="cart__element">
+            <button><img src="assets/img/icons/icon-menu-close.svg" alt="icon-menu-close"></button>
+        </div>
+        <div class="cart__element">
+            <div class="cart__element--side">
+                <p>Carrinho</p>
+                <span>0</span>
+            </div>
+
+            <div class="cart__element--itemsList">
+                <p>sem items ainda.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- Os scripts rodando na page -->
