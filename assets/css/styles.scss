@@ -5,6 +5,7 @@ $gradient:linear-gradient(90deg, rgba(222,191,113,1) 0%, rgba(255,206,84,1) 81%)
 $background: rgba(252, 248, 239, 0.484);
 $shadow: 0px 3px 6px, rgba(150, 150, 150, 0.027) 0px 3px 6px;
 $shadow-especial: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.027) 0px 3px 6px;
+$mediaScreenResize: "max-width: 1200px";
 
 ::-webkit-scrollbar {
     width: 13px;
@@ -108,7 +109,7 @@ label{
     justify-content: center;
 }
 
-header{
+.header{
     width: 100%;
     height: 100%;
     padding: 2%;
@@ -226,6 +227,31 @@ header{
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
         margin-bottom: -2%;
+    }
+}
+
+
+.Categorias-h{
+    .c-dropdown{
+        display: none;
+        z-index: 50;
+        top: 3%;
+        right: 17%;
+        position: absolute;
+        width: 230px;
+        height: 150px;
+        padding: 1% 2% 0% 1%;
+        background-color: white;
+        border-radius: 12px;
+        border: 1.5px solid rgba(128, 128, 128, 0.173);
+        box-shadow: $shadow-especial;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
     }
 }
 //estilos para o nav-bar
@@ -483,7 +509,7 @@ header{
     gap: 15px;
     padding: 3% 0;
     flex-wrap: nowrap;
-    @media (max-width: 1200px) {
+    @media ($mediaScreenResize) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -624,10 +650,13 @@ header{
     overflow: scroll;
     justify-content: center;
     padding: 3% 1%;
+    padding-left: 30%;
     
     @media (max-width:1200px) {
         width: 100vw;
+        padding-left: 900px;
     }
+
 }
 
 .card{
@@ -661,6 +690,10 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    @media (max-width:1200px) {
+        padding-top: 3%;
+        padding-right: 2%;
     }
 }
 
@@ -761,7 +794,7 @@ header{
     height: 600px;
     display: flex;
 
-    @media (max-width: 1200px) {
+    @media ($mediaScreenResize) {
         height: 100%;
     }
 }
@@ -789,7 +822,7 @@ header{
 .oferta-area{
     display: flex;
     flex-direction: row;
-    @media (max-width: 1200px) {
+    @media ($mediaScreenResize) {
         height: 100%;
         flex-wrap: wrap;
         justify-content: center;
@@ -814,7 +847,7 @@ header{
         margin: 1% 0;
     }
     
-    @media (max-width: 1200px) {
+    @media ($mediaScreenResize) {
         width: 60%;
         justify-content: center;
         align-items: center;
@@ -1061,3 +1094,217 @@ footer .footer__elemento .is-btn{
         text-align: center;
     }
 }
+
+
+/**Estilos para area de Acesso**/
+.body-container{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    @media ($mediaScreenResize) {
+        flex-wrap: wrap;
+    }
+}
+
+.body-container :is(.a-header, .a-main){
+    width: 60%;
+    height: 100%;
+    min-height: 100vh;
+    @media ($mediaScreenResize) {
+        width: 100%;
+        min-height: 100%;
+    }
+}
+
+.body-container .a-header{
+    width: 40%;
+    background-color: #fec842;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .a-header__element--a{
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+
+        img{
+            width: 30px;
+        }
+        &:hover{
+            color: unset;
+            text-decoration: underline;
+        }
+    }
+    @media ($mediaScreenResize) {
+        background-color: transparent;
+        justify-content: start;
+        padding: 3% 6%;
+    }
+}
+
+.a-header__element{
+    width: 100%;
+    height: 20%;
+}
+
+.is-container{
+    min-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+    min-height: 70%;
+    @media ($mediaScreenResize) {
+        display: none;
+        height: 0%;
+    }
+}
+
+.body-container .controllers-slide{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    @media ($mediaScreenResize) {
+        display: none;
+    }
+    span{
+        display: inline-flex;
+        width: 60px;
+        height: 15px;
+        border-radius: 20px;
+        background-color: grey;
+    }
+}
+
+.slide-acess{
+    width: 100%;
+    padding: 4%;
+    padding-left: 8%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+    img{
+        margin-left: 70px;
+        margin: 0 auto;
+        width: 90%;
+        &:nth-child(1){
+            animation: slide-count;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+
+    }    
+    
+}
+
+@keyframes slide-count {
+    0%{
+        margin-left: initial;
+
+    }
+    10%{
+        margin-left: initial;
+    }
+    20%{
+        margin-left: initial;
+    }
+    30%{
+        margin-left: initial;
+    }
+    40%{
+        margin-left: -570px;
+    }
+
+    50%{
+        margin-left: -570px;
+    }
+    60%{
+        margin-left: -570px;
+    }
+    70%{
+        margin-left: -570px;
+    }
+    80%{
+        margin-left: -(570px*2);
+    }
+    89%{
+        margin-left: -(570px*2);
+    }
+    95%{
+        margin-left: -(570px*2);
+    }
+    100%{
+        margin-left: initial;
+    }
+
+}
+
+.a-main{
+    padding: 8% 0% 1% 15%;
+
+    form, fieldset{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+
+        span{
+            width: 72%;
+            margin: 1% 0;
+        }
+        .input{
+            margin: 2% 0;
+            display: block;
+            width: 70%;
+            height: 45px;
+            border: 2px solid #5c565643;
+            border-radius: 6px;
+            padding: 0 2%;
+
+            &:focus,&:hover{
+                border: 2px solid $color;
+                background-color: #fffafa;
+            }
+        }
+
+        a{
+            width: 70%;
+            &:nth-of-type(2){
+                text-align: center;
+            }
+        }
+
+        .forget{
+            text-decoration: underline;
+            text-align: end;
+        }
+
+        #form-btn{
+            width: 70%;
+            height: 40px;
+            border-radius: 6px;
+            color: #505763;
+            text-shadow: $shadow-especial;
+            background-color: $color;
+            &:hover{
+                background-color: #006bff;
+                color: #fffafa;
+            }
+        }
+    }
+}
+

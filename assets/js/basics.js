@@ -8,3 +8,13 @@ let cartCallBtn = document.querySelector("#cartCall")
                     divCart.style.display = "none"
                 }
     }
+
+ const cDropdownDiv = document.querySelector(".c-dropdown")
+ const btnDropdownC = document.querySelector("#btn-dropdown-c")
+btnDropdownC.addEventListener("click", (e) => {
+    cDropdownDiv.style.display = "inline"
+    cDropdownDiv.onmouseleave = () =>{
+        return cDropdownDiv.style.display = "none"
+        
+    }
+})
