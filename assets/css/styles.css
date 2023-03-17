@@ -1075,6 +1075,7 @@ footer .footer__elemento .is-btn:hover, .footer__elemento .footer__elemento .is-
 }
 .body-container .a-header .a-header__element--a {
   width: 50%;
+  padding-left: 3%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1246,4 +1247,12 @@ footer .footer__elemento .is-btn:hover, .footer__elemento .footer__elemento .is-
 .a-main form #form-btn:hover, .a-main fieldset #form-btn:hover {
   background-color: #006bff;
   color: #fffafa;
+}
+.a-main form #form-btn + button, .a-main fieldset #form-btn + button {
+  width: 70%;
+  text-align: center;
+  color: #505763;
+}
+.a-main form #form-btn + button:hover, .a-main fieldset #form-btn + button:hover {
+  color: #fec842;
 }/*# sourceMappingURL=styles.css.map */

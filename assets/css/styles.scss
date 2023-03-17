@@ -1126,6 +1126,7 @@ footer .footer__elemento .is-btn{
 
     .a-header__element--a{
         width: 50%;
+        padding-left: 3%;
         display: flex;
         justify-content: start;
         align-items: center;
@@ -1288,6 +1289,8 @@ footer .footer__elemento .is-btn{
             }
         }
 
+
+
         .forget{
             text-decoration: underline;
             text-align: end;
@@ -1303,6 +1306,14 @@ footer .footer__elemento .is-btn{
             &:hover{
                 background-color: #006bff;
                 color: #fffafa;
+            }
+            & + button{
+                width: 70%;
+                text-align: center;
+                color: #505763;
+                &:hover{
+                    color: $color;
+                }
             }
         }
     }

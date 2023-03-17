@@ -4,130 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" id="link-de-css">
-    <link rel="stylesheet" href="assets/css/effects.css">
-    <link rel="stylesheet" media="(max-width:1000px)" href="assets/css/responsivity.css">
-    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.2.0-web/css/all.min.css">
-    <title>Lojita Store - Sobre</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>BestSeller - quem somos</title>
 </head>
 <body>
-    <header id="topo">        
-        <!-- top nav -->
-        <input type="checkbox" name="" id="inp-tgg">
-            <nav class="nav-bar" id="nav-bar">
-                <div class="nav-left" id="side-left-c">
-                    <h1>Loojita Store</h1>  
-                </div>
-                <div id="side-right-c">
-                    <div class="toggle-area">
-                        <label for="inp-tgg" class="control">
-                            <span class="icon-toggle"></span>
-                        </label>
-                    </div>  
-                    <div class="nav-right" id="nav-showToggle">      
-                        <div class="small-top">
-                            <div class="small-top-left">
-                                <a href="acess.html" class="btn-top"><i class="fa-solid fa-circle-user"></i></a>
-                                <button class="btn-top" id="btn-top-cart"><i class="fa-solid fa-cart-shopping"></i></button>
-                                <div class="cart" id="cart">
-                                    <div class="content-cart">
-                                        <div class="side-right">
-                                            <img src="assets/img/ring-l.jpg" alt="ring-line">
-                                        </div>
-                                        <div class="side-left">
-                                            <span>nome do produto</span>
-                                            <small>tipo do produto</small>
-                                            <span class="price">$25<small>,00</small></span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="total-cart">
-                                        <strong>Total: <span class="price">$25<small>,00</small></span></strong>
-                                        <strong class="last">$50<small>,00</small></strong>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="small-top-right">    
-                                <button class="btn-top" id="theme"><i class="fa-solid fa-toggle-off"></i></button>
-                                <button disabled="disabled"><i class="fa-sharp fa-solid fa-moon"></i></i></button> 
-                            </div>
-                        </div> 
-                        <ul class="links-top" id="links">
-                            <li class="link-top-item" ><a href="index.html">Home</a></li>
-                            <li class="link-top-item" ><a href="index.html#offer-day">Ofertas</a></li>
-                            <li class="link-top-item" ><a href="index.html#show-articles-md">Categoria</a></li>
-                            <li class="link-top-item" ><a href="sobre.html">Sobre</a></li>
-                            <li class="link-top-item" ><a href="contato.html">Contato</a></li></li>
+
+    <header class="header">   
+        <div class="h_seccao">
+            <p class="logo-texto">BestSeller</p>
+        </div>
+        <div class="h_seccao">
+            <label class="h_seccao_btn" for="t-check">
+                <img src="assets/img/icons/bars.svg" alt="bars" class="svg">
+            </label>
+        </div>
+        <input type="checkbox" name="t-check" id="t-check">
+        <div class="h_seccao">
+            <input type="search" name="serach" id="area_de_procura" placeholder="Pesquise aqui" required>
+            <button type="submit"><img src="assets/img/icons/search.svg" alt="search" class="svg"></button>
+        </div>
+
+        <div class="h_seccao">
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/angle-down.svg" alt="info" class="svg">
+                <div class="Categorias-h">
+                    <button id="btn-dropdown-c">          
+                        <span>Categorias</span>          
+                        <span><strong>Parceiros</strong></span>
+                    </button>
+                    <div class="c-dropdown">
+                        <ul class="c-dropdown__element">
+                            <li><a href="">Mais requisitados</a></li>
+                            <li><a href="">Vendedores verificados</a></li>
+                            <li><a href="">Importados</a></li>
+                            <li><a href="">Colaboradores</a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-    
-        </header>
-
-        <main id="container-fluxo">
-            <h2 class="Geral">SOBRE NÓS</h2>
-            <section>
-                <h3 class="Section-title">Nosso Trajecto</h3>
-                <div class="contant">
-                    <div class="image-place">
-                        <img src="assets/img/imagem-1.svg" alt="">
-                    </div>
-
-                    <div class="text-place">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea in molestias quo fugit sint itaque rem aliquid,
-                            tempore odit ab illum eaque doloribus alias consequatur quos commodi repudiandae, natus vitae.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-
-            <section>
-                <h3 class="Section-title">Missão e Visão</h3>
-                <div class="contant">
-                    <div class="text-place">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus eligendi tempore molestias natus temporibus molestiae est. Fuga laborum at sit nemo nihil distinctio voluptatem voluptas maiores neque, nesciunt quaerat!</p>
-                    </div>
-
-                    <div class="image-place">
-                        <img src="assets/img/imagen-2.svg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <div class="container-plus">
-                <div class="text-t-ch">
-                    <p> <span>Important Title</span> <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatum neque in dignissimos qui eum soluta, tempore magnam, recusandae, a eligendi saepe quisquam vel voluptatibus hic id! Dolores, tempora animi?</p>
-                </div>
-
-                <div class="contant-f-ch">
-                    <div>
-                        <h4>Nossos Valores</h4>
-                    </div>
-                    <div class="list-btn" id="list-btn">
-                        <button><i class="fa-solid fa-shield-halved"></i></button>
-                        <button><i class="fa-solid fa-truck-fast"></i></button>
-                        <button><i class="fa-solid fa-user-tie"></i></button>
-                        <button><i class="fa-solid fa-check"></i></button>
-                    </div>
-                </div>
             </div>
-            
-        <div class="contant-down">
-            <small>
-                Lojita Store
-            </small>
 
-            <button class="callTop" id="btn-to-up"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/chat-bubble-user.svg" alt="user" class="svg">
+                <a href="acess.html">
+                    <span>Conta</span>
+                    <span><strong>Entrar</strong></span>
+                </a>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="assets/img/icons/shopping-cart.svg" alt="cart" class="svg">
+                <button  id="cartCall">
+                    <span>Carrinho</span>
+                    <span><strong>0, <small>00</small>AKZ</strong></span>
+                </button>
+            </div>              
         </div>
-        </main>
+    </div>
+
+    </header>
+    <main>
+        <section>
+            <h1>Quem Somos</h1>
+        </section>
+    </main>
 
 </body>
 
 <!-- Scripts da página -->
-<script src="assets/javascript/scrpt-to-sobre.js"></script>
-<script src="assets/javascript/to-responsive.js"></script>
+<script src="assets/js/basics.js"></script>
 </html>
