@@ -1,20 +1,34 @@
 
-let cartCallBtn = document.querySelector("#cartCall")
-    cartCallBtn.onclick = function(){
-        let divCart = document.querySelector(".cart")
-            divCart.style.display = "flex"
-            let divCartBtnCLose = document.querySelector(".cart button")
-                divCartBtnCLose.onclick = function(){
-                    divCart.style.display = "none"
-                }
-    }
+let cartCallBtn = document.querySelectorAll("#cartCall")
+let divCartBtnCLose = document.querySelectorAll(".cart button")
+let divCart = document.querySelectorAll(".cart")
 
- const cDropdownDiv = document.querySelector(".c-dropdown")
- const btnDropdownC = document.querySelector("#btn-dropdown-c")
-btnDropdownC.addEventListener("click", (e) => {
-    cDropdownDiv.style.display = "inline"
-    cDropdownDiv.onmouseleave = () =>{
-        return cDropdownDiv.style.display = "none"
-        
+if((cartCallBtn && divCartBtnCLose && divCart).length != 0){
+    cartCallBtn[0].onclick = () =>{
+        divCart[0].style.display = "flex"
+            divCartBtnCLose[0].onclick = () =>{
+                divCart[0].style.display = "none"
+            }
+}
+}
+
+ const cDropdownDiv = document.querySelectorAll(".c-dropdown")
+ const btnDropdownC = document.querySelectorAll("#btn-dropdown-c")
+if((cDropdownDiv && btnDropdownC).length != 0)
+{
+    btnDropdownC[0].addEventListener("click", (e) => {
+        cDropdownDiv[0].style.display = "inline"
+        cDropdownDiv[0].onmouseleave = () =>{
+            return cDropdownDiv[0].style.display = "none"
+            
+        }
+    })
+    
+}
+
+const CreateAccountBtn = document.querySelectorAll("#set-create-account")
+if(CreateAccountBtn.length != 0)
+{
+    CreateAccountBtn[0].onclick = () => {
     }
-})
+}

@@ -27,55 +27,57 @@
        </div>
     </header>
         
-    <main class="a-main" id="app">
+    <main class="a-main">
         <div id="app">
-            <form action="#" v-if="showTheForms === 'in'">        
-                <fieldset>
-                    <legend>Comece Agora</legend>
-                    <span class="logo-texto">BestSeller</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur veritatis dolore a facilis laudantium</span>
-                    <label for="nameUser">
-                        Username
-                        <input type="text" id="nameUser" placeholder="seu username" required class="input">
-                    </label>
-                    <label for="passWord">
-                        Senha
-                        <input type="password" name="t-passWord" id="passWord" placeholder="sua senha" required class="input">
-                    </label>
-                    <a href="" class="forget">esqueceu a senha</a>
-                    <button type="submit" id="form-btn">Acessar</button>
-                    <button id="set-create-account">Criar uma conta</button>
-                </fieldset>
-            </form>
-
-            <form action="#" v-else">        
-                <fieldset>
-                    <legend>Comece Agora</legend>
-                    <span class="logo-texto">BestSeller</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur veritatis dolore a facilis laudantium</span>
-                    <label for="emailUser">
-                        Email
-                        <input type="email" id="emailUser" placeholder="seu Email" required class="input">
-                    </label>
-                    <label for="UsernameNew">
-                        Username
-                        <input type="text" name="t-UsernameNew" id="UsernameNew" placeholder="sua username" required class="input">
-                    </label>
-
-                    <label for="PasswordNew">
-                        Password
-                        <input type="text" name="t-PasswordNew" id="PasswordNew" placeholder="sua Password" required class="input">
-                    </label>
-                    <button type="submit" id="form-btn">Cadastrar</button>
-                    <button id="set-in">Já tenho uma Conta!</button>
-                </fieldset>
-            </form>
+            <div  v-if="showTheForms === 'in'">    
+                <form action="#">        
+                    <fieldset>
+                        <legend>Comece Agora</legend>
+                        <span class="logo-texto">BestSeller</span>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur veritatis dolore a facilis laudantium</span>
+                        <label for="nameUser">
+                            Username
+                            <input type="text" id="nameUser" placeholder="seu username" required class="input">
+                        </label>
+                        <label for="passWord">
+                            Senha
+                            <input type="password" name="t-passWord" id="passWord" placeholder="sua senha" required class="input">
+                        </label>
+                        <a href="" class="forget">esqueceu a senha</a>
+                        <button type="submit" id="form-btn">Acessar</button>
+                    </fieldset>
+                </form>
+                <button class="btn-especial" id="set-create-account">Criar uma conta</button>
+            </div>
+            <div v-else>
+                <form action="#">        
+                    <fieldset>
+                        <legend>Comece Agora</legend>
+                        <span class="logo-texto">BestSeller</span>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur veritatis dolore a facilis laudantium</span>
+                        <label for="emailUser">
+                            Email
+                            <input type="email" id="emailUser" placeholder="seu Email" required class="input">
+                        </label>
+                        <label for="UsernameNew">
+                            Username
+                            <input type="text" name="t-UsernameNew" id="UsernameNew" placeholder="sua username" required class="input">
+                        </label>
+    
+                        <label for="PasswordNew">
+                            Password
+                            <input type="text" name="t-PasswordNew" id="PasswordNew" placeholder="sua Password" required class="input">
+                        </label>
+                        <button type="submit" id="form-btn">Cadastrar</button>
+                    </fieldset>
+                </form>
+                <button class="btn-especial" id="set-create-account">Já tenho uma conta</button>
+            </div>
         </div>
-     
     </main>
 </body>
 <!-- scripts da página -->
-<script src="assets/javascript/snd-scrpt.js"></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/basics.js"></script>
 </html>
