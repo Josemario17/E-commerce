@@ -235,9 +235,7 @@ label{
 }
 
 
-.Categorias-h{
-    .c-dropdown{
-        display: none;
+.c-dropdown{
         z-index: 50;
         top: 3%;
         right: 17%;
@@ -257,7 +255,10 @@ label{
         }
         
     }
-}
+
+    .Categorias-h .c-dropdown{
+        display: none;
+    }
 //estilos para o nav-bar
 .nav-bar{
     width: 100%;
@@ -287,9 +288,15 @@ label{
     display: grid;
     align-content: center;
     justify-content: center;
+    font-size: initial;
+    color: inherit;
 
     @media (max-width:1200px) {
         width: 30%;   
+    }
+
+    &:hover{
+        color: $color;
     }
 }
 
@@ -1321,8 +1328,12 @@ footer .footer__elemento .is-btn{
             }
         }
     }
+
 }
 
+.second-create-account{
+    display: none;
+}
 
 .btn-especial{
     width: 70%;
@@ -1474,4 +1485,106 @@ footer .footer__elemento .is-btn{
         height: 100%;
         padding: 10%;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//estilos extras
+.label-strech-info{
+    position: fixed;
+    bottom: 8%;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: $color;
+    border-radius: 50%;
+    box-shadow: $shadow-especial;
+    border: 1px solid #6b748325;
+
+    &:hover{
+        transform: scale(1.12);
+    }
+
+    img{    
+        width: 80%;
+    }
+}
+
+.contacto-formas{
+    @extend .c-dropdown;
+    padding: 0 1%;
+    top: initial;
+    position: fixed;
+    bottom: 20%;
+    right: 1%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(128, 128, 128, 0.321);
+    animation-name: scroll;
+    animation-duration: 1s;
+
+    .contacto-formas__element{
+        width: 92%;
+        height: 26px;
+        margin: 4% auto;
+        border-radius: 6px;
+        color: whitesmoke;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        &:nth-child(1){
+            background-color: rgb(9, 78, 9);
+        }
+
+        &:nth-child(2){
+            background-color: $color3;
+        }
+
+        img{
+            width: 20px;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+#t-check-div-info:checked ~ .contacto-formas{
+    display: flex;
+}
+
+@keyframes scroll {
+    from{
+        right: -10%;
+    }
+
+    to{
+        right: 1%;
+    }
 }
