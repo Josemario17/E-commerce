@@ -49,7 +49,7 @@
                         <button type="submit" id="form-btn">Acessar</button>
                     </fieldset>
                 </form>
-                <button class="btn-especial" id="set-create-account">Criar uma conta</button>
+                <button class="btn-especial" @click="changeSectionDiv()">Criar uma conta</button>
             </div>
             <div v-else class="second-create-account">
                 <form action="#">        
@@ -73,7 +73,7 @@
                         <button type="submit" id="form-btn">Cadastrar</button>
                     </fieldset>
                 </form>
-                <button class="btn-especial" id="set-create-account">Já tenho uma conta</button>
+                <button class="btn-especial" @click="changeSectionDiv2()">Já tenho uma conta</button>
             </div>
         </div>
     </main>

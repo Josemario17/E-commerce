@@ -6,5 +6,15 @@ const { createApp } = Vue
         message: 'Hello Vue!',
         showTheForms: 'in'
       }
+    },
+
+    methods:{
+      changeSectionDiv(){
+        showTheForms: "out";
+      },
+
+      changeSectionDiv2(){
+        showTheForms: "in"
+      }
     }
   }).mount('#app')
