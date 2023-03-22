@@ -1,0 +1,92 @@
+.dash-main {
+  margin: 4% auto;
+  width: 90%;
+  height: 85vh;
+}
+
+.dash-main > div#app {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  gap: 5%;
+}
+
+aside {
+  width: 30%;
+}
+aside:nth-of-type(2) {
+  width: 65%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card .is-profile-picture {
+  width: 40%;
+  height: 31%;
+  margin: 0% auto;
+  border: 1.5px solid #505763;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .is-profile-picture img {
+  width: 100%;
+}
+
+.card .is-text {
+  width: 80%;
+  margin: 0 auto;
+}
+.card .is-text .userNameText {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 2% 0 5%;
+}
+.card .is-text .userInfoSet {
+  width: 70%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.card .is-text img {
+  width: 23px;
+}
+
+.list-btns {
+  width: 90%;
+  padding: 2% 1%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10%;
+}
+
+.list-btns .btn-list__item {
+  width: auto;
+  padding: 2% 4%;
+  border: 1.5px solid #505763;
+  border-radius: 7px;
+}
+.list-btns .btn-list__item:hover {
+  transform: scale(1.03);
+}
+
+.list-btns .is-active {
+  background-color: #505763;
+  color: white;
+  box-shadow: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.027) 0px 3px 6px;
+}/*# sourceMappingURL=dashboard.css.map */

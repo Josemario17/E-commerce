@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="assets/js/app.js"></script>
     <title>App - BESTSELLER / Acesso</title>
 </head>
 <body class="body-container">
@@ -31,7 +29,7 @@
         
     <main class="a-main">
         <div id="app">
-            <div  v-if="showTheForms === 'in'">    
+            <section v-if="showTheForms">    
                 <form action="#">        
                     <fieldset>
                         <legend>Comece Agora</legend>
@@ -49,9 +47,9 @@
                         <button type="submit" id="form-btn">Acessar</button>
                     </fieldset>
                 </form>
-                <button class="btn-especial" @click="changeSectionDiv()">Criar uma conta</button>
-            </div>
-            <div v-else class="second-create-account">
+                <button class="btn-especial" @click="showTheForms = false">Criar uma conta</button>
+            </section>
+            <section v-else class="second-create-account">
                 <form action="#">        
                     <fieldset>
                         <legend>Comece Agora</legend>
@@ -73,11 +71,13 @@
                         <button type="submit" id="form-btn">Cadastrar</button>
                     </fieldset>
                 </form>
-                <button class="btn-especial" @click="changeSectionDiv2()">Já tenho uma conta</button>
-            </div>
+                <button class="btn-especial" @click="showTheForms = true">Já tenho uma conta</button>
+            </section>
         </div>
     </main>
 </body>
 <!-- scripts da página -->
-    <script src="assets/js/basics.js"></script>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="assets/js/app.js"></script>
 </html>

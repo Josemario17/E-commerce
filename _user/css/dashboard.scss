@@ -1,0 +1,100 @@
+$color: #fec842;
+$color2: #505763;
+$color3: #006bff;
+$gradient:linear-gradient(90deg, rgba(222,191,113,1) 0%, rgba(255,206,84,1) 81%);
+$background: rgba(252, 248, 239, 0.484);
+$shadow: 0px 3px 6px, rgba(150, 150, 150, 0.027) 0px 3px 6px;
+$shadow-especial: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.027) 0px 3px 6px;
+$mediaScreenResize: "max-width: 1200px";
+@mixin center($align, $jusitfy){
+    display: flex;
+    justify-content: $jusitfy;
+    align-items: $align;
+}
+
+//estilos do dashboard
+
+.dash-main{
+    margin: 4% auto;
+    width: 90%;
+    height: 85vh;
+}
+
+.dash-main > div#app {
+    width: 100%;
+    height: 70%;
+    @include center(normal, normal);
+    gap: 5%;
+}
+
+aside{
+    width: 30%;
+    &:nth-of-type(2){
+        width: 65%;
+    }
+}
+
+.card{
+    height: 100%;
+    @include center(center, center);
+    flex-direction: column;
+    gap: 30px;
+}
+.card .is-profile-picture{
+    width: 40%;
+    height: 31%;
+    margin: 0% auto;
+    border: 1.5px solid $color2;
+    border-radius: 50%;
+    @include center(center, center);
+
+    img{
+        width: 100%;
+    }
+}
+
+.card .is-text{
+    width: 80%;
+    margin: 0 auto;
+        .userNameText{
+            display: block;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 500;
+            margin: 2% 0 5%;
+        }
+
+        .userInfoSet{
+            width: 70%;
+            margin: 5% auto;
+            @include center(center, start);
+            gap: 10px;
+        }
+        img{
+            width: 23px;
+        }
+}
+
+.list-btns{
+    width: 90%;
+    padding: 2% 1%;
+    @include center(start, center);
+    gap: 10%;
+}
+
+.list-btns .btn-list__item{
+    width: auto;
+    padding: 2% 4%;
+    border: 1.5px solid $color2;
+    border-radius: 7px;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+}
+
+.list-btns .is-active{
+    background-color: $color2;
+    color: white;
+    box-shadow: $shadow-especial;
+}

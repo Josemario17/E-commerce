@@ -26,16 +26,9 @@ if((cDropdownDiv && btnDropdownC).length != 0)
     
 }
 
-const CreateAccountBtn = document.querySelectorAll("#set-create-account")
-if(CreateAccountBtn.length != 0)
-{
-    CreateAccountBtn[0].onclick = () => {
-    }
-}
-
 const btnToShowTheContact = document.querySelectorAll("#clik-to-contact")
 const inputCheckToDivInfo = document.querySelectorAll("#t-check-div-info")
-if((btnToShowTheContact.length && inputCheckToDivInfo).length != 0){
+if((btnToShowTheContact && inputCheckToDivInfo).length != 0){
     btnToShowTheContact[0].onclick = () => {
         inputCheckToDivInfo[0].checked = true
     }

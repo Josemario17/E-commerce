@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard - BestSeller</title>
+</head>
+<body>
+    <header class="header">   
+        <div class="h_seccao">
+            <p class="logo-texto">BestSeller</p>
+        </div>
+        <div class="h_seccao">
+            <label class="h_seccao_btn" for="t-check">
+                <img src="../assets/img/icons/bars.svg" alt="bars" class="svg">
+            </label>
+        </div>
+        <input type="checkbox" name="t-check" id="t-check">
+        <div class="h_seccao">
+            <input type="search" name="serach" id="area_de_procura" placeholder="Pesquise aqui" required>
+            <button type="submit"><img src="../assets/img/icons/search.svg" alt="search" class="svg"></button>
+        </div>
+
+        <div class="h_seccao">
+            <div class="h_seccao_md">
+                <img src="../assets/img/icons/angle-down.svg" alt="info" class="svg">
+                <div class="Categorias-h">
+                    <button id="btn-dropdown-c">          
+                        <span>Categorias</span>          
+                        <span><strong>Parceiros</strong></span>
+                    </button>
+                    <div class="c-dropdown">
+                        <ul class="c-dropdown__element">
+                            <li><a href="">Mais requisitados</a></li>
+                            <li><a href="">Vendedores verificados</a></li>
+                            <li><a href="">Importados</a></li>
+                            <li><a href="">Colaboradores</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="../assets/img/icons/chat-bubble-user.svg" alt="user" class="svg">
+                <a href="acess.html">
+                    <span>Conta</span>
+                    <span><strong>Entrar</strong></span>
+                </a>
+            </div>
+
+            <div class="h_seccao_md">
+                <img src="../assets/img/icons/shopping-cart.svg" alt="cart" class="svg">
+                <button  id="cartCall">
+                    <span>Carrinho</span>
+                    <span><strong>0, <small>00</small>AKZ</strong></span>
+                </button>
+            </div>              
+        </div>
+    </div>
+    </header>
+
+    <main class="dash-main">
+        <div id="app">
+            <aside>
+                <div class="card">
+                    <div class="card__element is-profile-picture">
+                        <img src="" alt="profile-img">
+                    </div>
+        
+                    <div class="card__element is-text">
+                        <span class="userNameText">User name</span>
+                        <div class="userInfoSet"><img src="../assets/img/icons/map-marker-info.svg" alt="status"> <p>Localização</p></div>
+                        <div class="userInfoSet"><img src="../assets/img/icons/phone.svg " alt="contact"> <p>Contato</p></div>
+                        <div class="userInfoSet"><img src="../assets/img/icons/favorite.svg" alt="rating"> <p>Rating</p></div>
+                    </div>
+                </div>
+            </aside>
+            <aside>
+                <div class="list-btns">
+                    <button class="btn-list__item is-active">Dados Pessoais</button>
+                    <button class="btn-list__item">Financeiros</button>
+                    <button class="btn-list__item">Activade</button>
+                    <button class="btn-list__item">Produtos</button>
+                </div>
+
+                <div class="section-profle">
+                    
+                </div>
+            </aside>
+        </div>
+    </main>
+
+      <!-- footer-area -->
+      <footer>
+        <div>
+        </div>
+        <div class="footer__elemento">
+            <div class="footer__elemento__content-2">   
+                <p class="footer__elemento__content logo-texto">BestSeller</p>
+                <p>2022-2023 BestSeller copyrigth - todos direitos reservados</p>
+            </div>
+            <div class="footer__elemento__content-2">
+                <a href="" role="button" class="social-button"><img src="../assets/img/icons/facebook-f.svg" alt="facebook-icon"></a>
+                <a href="" role="button" class="social-button"><img src="../assets/img/icons/instagram.svg" alt="instagram-icon"></a>
+                <a href="" role="button" class="social-button"><img src="../assets/img/icons/linkedin-alt.svg" alt="linkedin-icon"></a>
+                <div class="content_info">
+                    <a href="">Politicas de Privacidade</a>
+                    <a href="">Legal</a>
+                </div>
+            </div>
+        </div>  
+    </footer>
+    <div class="cart">
+        <div class="cart__element">
+            <button><img src="../assets/img/icons/icon-menu-close.svg" alt="icon-menu-close"></button>
+        </div>
+        <div class="cart__element">
+            <div class="cart__element--side">
+                <p>Carrinho</p>
+                <span>0</span>
+            </div>
+
+            <div class="cart__element--itemsList">
+                <p>sem items ainda.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/app.js"></script>
+<script src="../assets/js/basics.js"></script>
+</html>
