@@ -1,15 +1,23 @@
-.dash-main {
+.a-main {
   margin: 4% auto;
   width: 90%;
-  height: 85vh;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .a-main {
+    margin-left: 20%;
+  }
 }
 
-.dash-main > div#app {
+.a-main > div#app {
   width: 100%;
   height: 70%;
   display: flex;
   justify-content: normal;
   align-items: normal;
+  flex-wrap: wrap;
   gap: 5%;
 }
 
@@ -19,9 +27,16 @@ aside {
 aside:nth-of-type(2) {
   width: 65%;
 }
+@media (max-width: 1200px) {
+  aside {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
 
 .card {
-  height: 100%;
+  height: 70%;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +46,7 @@ aside:nth-of-type(2) {
 
 .card .is-profile-picture {
   width: 40%;
-  height: 31%;
+  height: 27%;
   margin: 0% auto;
   border: 1.5px solid #505763;
   border-radius: 50%;
@@ -50,7 +65,7 @@ aside:nth-of-type(2) {
 .card .is-text .userNameText {
   display: block;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.9em;
   font-weight: 500;
   margin: 2% 0 5%;
 }
@@ -68,11 +83,20 @@ aside:nth-of-type(2) {
 
 .list-btns {
   width: 90%;
-  padding: 2% 1%;
+  padding: 2% 1% 4%;
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 10%;
+}
+@media (max-width: 1200px) {
+  .list-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .list-btns .btn-list__item {
@@ -84,9 +108,56 @@ aside:nth-of-type(2) {
 .list-btns .btn-list__item:hover {
   transform: scale(1.03);
 }
+@media (max-width: 1200px) {
+  .list-btns .btn-list__item {
+    margin: 2% auto;
+  }
+}
 
-.list-btns .is-active {
+.list-btns .is-active:last-of-type, .list-btns .is-active-modifier {
   background-color: #505763;
   color: white;
   box-shadow: rgba(110, 110, 110, 0.064) 0px 3px 6px, rgba(123, 120, 120, 0.027) 0px 3px 6px;
+}
+
+.a-main .is-disbale:hover {
+  border: 2px solid rosybrown;
+}
+
+@media (max-width: 1200px) {
+  form {
+    margin: 2% auto;
+  }
+}
+
+section {
+  width: 100%;
+}
+section .section-f__element {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .section-f__element img {
+  width: 100%;
+}
+section h3, section p {
+  width: 50%;
+  margin: 1% auto;
+  text-align: center;
+}
+section div:last-of-type {
+  margin: 0 auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 1200px) {
+  section :is(.section-f__element, h3, p, div:last-of-type) {
+    width: 100%;
+  }
 }/*# sourceMappingURL=dashboard.css.map */

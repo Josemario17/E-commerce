@@ -62,7 +62,7 @@
     </div>
     </header>
 
-    <main class="dash-main">
+    <main class="a-main">
         <div id="app">
             <aside>
                 <div class="card">
@@ -71,8 +71,8 @@
                     </div>
         
                     <div class="card__element is-text">
-                        <span class="userNameText">User name</span>
-                        <div class="userInfoSet"><img src="../assets/img/icons/map-marker-info.svg" alt="status"> <p>Localização</p></div>
+                        <span class="userNameText">{{name}}</span>
+                        <div class="userInfoSet"><img src="../assets/img/icons/map-marker-info.svg" alt="status"> <p>{{address}}</p></div>
                         <div class="userInfoSet"><img src="../assets/img/icons/phone.svg " alt="contact"> <p>Contato</p></div>
                         <div class="userInfoSet"><img src="../assets/img/icons/favorite.svg" alt="rating"> <p>Rating</p></div>
                     </div>
@@ -80,14 +80,80 @@
             </aside>
             <aside>
                 <div class="list-btns">
-                    <button class="btn-list__item is-active">Dados Pessoais</button>
-                    <button class="btn-list__item">Financeiros</button>
-                    <button class="btn-list__item">Activade</button>
-                    <button class="btn-list__item">Produtos</button>
+                    <button @click="DataSect = 'personal'" class="btn-list__item">Dados Pessoais</button>
+                    <button @click="DataSect = 'finance'" class="btn-list__item">Financeiros</button>
+                    <button @click="DataSect = 'activity'" class="btn-list__item">Activade</button>
+                    <button @click="DataSect = 'default'" class="btn-list__item">Produtos</button>
                 </div>
 
                 <div class="section-profle">
-                    
+                    <div v-if="DataSect === 'personal'">
+                        <form action="#">        
+                            <fieldset>
+                                <label for="name">
+                                    Nome 
+                                    <input type="text" id="name" value="name" v-model="name" required class="input" maxlength="35">
+                                </label>
+                                <label for="UsernameNew">
+                                    Username
+                                    <input type="text" name="t-UsernameNew" id="UsernameNew" value="UserName" v-model="UserName" required class="input">
+                                </label>
+                               <label for="emailUser">
+                                    Email
+                                    <input type="email" id="emailUser" value="email" value="email" v-model="email" required class="input">
+                                </label>
+                           
+                                <label for="yourLocation">
+                                    yourLocation           
+                                   <input type="text" name="yourLocation" id="yourLocation" v-model="address" maxlength="20" required class="input">
+                                </label>
+                   
+                                <label for="PasswordNew">
+                                    Password
+                                    <input type="text" name="t-PasswordNew" id="PasswordNew" disabled required class="input is-disbale">
+                                </label>
+                                <button type="submit" id="form-btn">Atualizar Dados</button>
+                           </fieldset>
+                         </form>
+                    </div>
+
+                    <div v-else-if="DataSect === 'finance'">
+                       <div class="list-btns">
+                            <button class="btn-list__item is-active-modifier">Adicionar Cartões</button>
+                            <button class="btn-list__item">Outras formas de Pagamentos</button>
+                       </div>
+                    </div>
+
+                    <div v-else-if="DataSect === 'activity'">
+                        <div class="block-type-container">
+                            <section>
+                               <div class="section-f__element"> 
+                                <img src="../assets/img/otp-security.svg" alt="otp-security">
+                               </div>
+                                <h3>Ainda sem Autenticação da Conta</h3>
+                                <p>Para melhor uso da Nossa Aplicação verifica o seu perfil e obtenha um certificação para comprar e vender com êxito.</p>
+                                <div class="list-btns">
+                                    <button class="btn-list__item">Autenticar Celular</button>
+                                    <button class="btn-list__item is-active-modifier">Autenticar Email</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div v-else>
+                        <div class="block-type-container"> 
+                         <section>
+                            <div class="section-f__element"> 
+                             <img src="../assets/img/man-withdrawing-money-from-atm.svg" alt="otp-security">
+                            </div>
+                             <h3>Mude sua conta para uma conta premium</h3>
+                             <p>Torne o seu perfil empresarial, crie anuncios de produtos, adicione Produtos e veja tudo sobre em tempo real.</p>
+                             <div class="list-btns">
+                                 <button class="btn-list__item is-active-modifier">Ver Planos</button>
+                             </div>
+                         </section>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -132,4 +198,7 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/app.js"></script>
 <script src="../assets/js/basics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </html>

@@ -33,3 +33,16 @@ if((btnToShowTheContact && inputCheckToDivInfo).length != 0){
         inputCheckToDivInfo[0].checked = true
     }
 }
+
+/*const btnListItem = document.querySelectorAll(".btn-list__item")
+if(btnListItem.length != 0){
+    btnListItem.forEach(element => { 
+        for(element in btnListItem){
+        btnListItem[element].className = "btn-list__item"
+    }
+    btnListItem[element].onclick = () =>{
+        return btnListItem[element].className = "btn-lis__item is-active"
+    }
+        
+    });
+} */

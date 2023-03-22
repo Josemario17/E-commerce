@@ -14,16 +14,22 @@ $mediaScreenResize: "max-width: 1200px";
 
 //estilos do dashboard
 
-.dash-main{
+.a-main{
     margin: 4% auto;
     width: 90%;
-    height: 85vh;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    @media ($mediaScreenResize) {
+        margin-left: 20%;
+    }
 }
 
-.dash-main > div#app {
+.a-main > div#app {
     width: 100%;
     height: 70%;
     @include center(normal, normal);
+    flex-wrap: wrap;
     gap: 5%;
 }
 
@@ -32,17 +38,23 @@ aside{
     &:nth-of-type(2){
         width: 65%;
     }
+    
+    @media ($mediaScreenResize) {
+        width: 100%;
+        margin: 3% 0;
+    }
 }
 
 .card{
-    height: 100%;
+    height: 70%;
+    min-height: 500px;
     @include center(center, center);
     flex-direction: column;
     gap: 30px;
 }
 .card .is-profile-picture{
     width: 40%;
-    height: 31%;
+    height: 27%;
     margin: 0% auto;
     border: 1.5px solid $color2;
     border-radius: 50%;
@@ -59,7 +71,7 @@ aside{
         .userNameText{
             display: block;
             text-align: center;
-            font-size: 1.3em;
+            font-size: 1.9em;
             font-weight: 500;
             margin: 2% 0 5%;
         }
@@ -77,9 +89,15 @@ aside{
 
 .list-btns{
     width: 90%;
-    padding: 2% 1%;
+    padding: 2% 1% 4%;
     @include center(start, center);
     gap: 10%;
+    
+    @media ($mediaScreenResize) {
+        width: 100%;
+        @include center(center, center);
+        flex-wrap: wrap;
+    }
 }
 
 .list-btns .btn-list__item{
@@ -91,10 +109,60 @@ aside{
     &:hover{
         transform: scale(1.03);
     }
+
+    @media ($mediaScreenResize) {
+        margin: 2% auto;
+    }
 }
 
-.list-btns .is-active{
+.list-btns .is-active:last-of-type, .list-btns .is-active-modifier{
     background-color: $color2;
     color: white;
     box-shadow: $shadow-especial;
+}
+
+
+
+.a-main .is-disbale{
+    &:hover{
+        border: 2px solid rosybrown;
+    }
+}
+
+
+form{
+    @media ($mediaScreenResize) {
+        margin: 2% auto;
+    }
+
+}
+
+section{
+    width: 100%;
+    .section-f__element{
+        width: 50%;
+        margin: 0 auto;
+        @include center(center, center);
+        img{
+            width: 100%;
+        }
+    }
+    h3,p{
+        width: 50%;
+        margin: 1% auto;
+        text-align: center;
+    }
+
+    div:last-of-type{
+        margin: 0 auto;
+        margin-top: 3%;
+        @include center(center, center);
+        gap: 15px;
+    }
+
+    @media ($mediaScreenResize) {
+        :is(.section-f__element, h3, p, div:last-of-type){
+            width: 100%;
+        }
+    }
 }
